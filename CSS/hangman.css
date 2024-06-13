@@ -1,12 +1,4 @@
-@font-face {
-    font-family: Hangman;
-    src: url("/Fonts/hangman.ttf");
-}
-
 h1 {
-    font-family: Hangman;
-    font-weight: 300;
-    font-size: 64px;
     letter-spacing: 2px;
     text-shadow: 2px 2px #AAA;
 }

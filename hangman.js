@@ -1,5 +1,5 @@
 // coded by Lovro Selic , (C) C00lSch00l 2014
-//version 1.01.02 
+//version 1.01.03 
 
 
 $(document).ready(function () {
@@ -40,7 +40,7 @@ function checkLetter() {
         $("#leftovers").append(theLetter + ", ");
         $("#message").html("Message: <span class='red'>incorrect letter</span>");
         lives--;
-		$("#story").html("<img src='/Images/hangman" + lives + ".png' width='440'>");
+		$("#story").html("<img src='/Images/hangman" + lives + ".jpg' width='440'>");
         if (lives === 0) {
             $("#message").html("Message: <span class='red'>You FAILED!<br> Solution was: </span>" + newSentence);
             tidy();
@@ -53,7 +53,7 @@ function checkLetter() {
         var testEndOfGame = guessSentence.indexOf(UN_CHAR);
         if (testEndOfGame === -1) {
             $("#message").html("Message: <span class='green'>Great work. You have completed the sentence!</span>");
-			$("#story").html("<img src='/Images/hangman_win.png' width='440'>");
+			$("#story").html("<img src='/Images/hangman_win.jpg' width='440'>");
             tidy();
         }
     }
@@ -127,7 +127,7 @@ function startGame() {
     }
     $("#buildSentence").html(guessSentence);
     setLives();
-	$("#story").html("<img src='/Images/hangman7.png' width='440'>");
+	$("#story").html("<img src='/Images/hangman7.jpg' width='440'>");
     $("#getLetter").focus();
 }
 
